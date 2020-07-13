@@ -1,0 +1,38 @@
+<!--pages/animalMoments/animalMomentsList/animalMomentsList.wxml-->
+<!-- 资讯专题列表 -->
+
+<!-- 分类标题start -->
+<view class=' '>
+  <view class='flex padding justify-between bg-white'>
+    <image class='listHeadImg' src='{{sub_img_url}}'></image>
+  </view>
+  <!-- 分类标题end -->
+
+  <!-- 文章start -->
+  <view class='margin-top '>
+    
+      <view wx:for="{{articles}}" wx:key class="cu-card article no-card solid-bottom" data-type="{{item.type}}" data-id="{{item.art_id}}" bindtap="gotoDetail">
+      
+        <view class="cu-item shadow">
+          <view class="title">
+            <view class="text-cut">{{item.title}}</view>
+          </view>
+          <view class="content">
+            <image src="{{item.img_url}}" mode="aspectFill"></image>
+            <view class="desc">
+              <view class="text-content"> {{item.abstract}}</view>
+              <view>
+                <view class="cu-tag bg-red light sm round">热门</view>
+                <view class="cu-tag bg-green light sm round">{{item.tag}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      
+      </view>
+
+
+  </view>
+  <!-- 文章end -->
+<view class="padding"></view>
+</view>

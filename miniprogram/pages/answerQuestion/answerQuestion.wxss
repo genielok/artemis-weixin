@@ -1,0 +1,102 @@
+/* pages/sequence/sequence.wxss */
+page{
+  min-height:100%;
+  width:100%;
+  background-image: url(https://s2.ax1x.com/2020/03/01/32wXOP.png);
+
+}
+
+.userinfo {
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  height: 300rpx;
+}
+
+.card{
+  border-radius: 20rpx;
+  width: 85%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1rpx solid #db7420; */
+}
+
+.container{
+  
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 0 0 140rpx 0;
+  /* border: 1rpx solid #db20c2; */
+}
+
+.cardImg{
+  width:550rpx;
+height:350rpx;
+
+
+}
+
+
+.option {
+  min-width: 500rpx;
+  border-radius: 30rpx;
+  border: solid white 8rpx;
+  margin: 30rpx;
+}
+
+
+.footer{
+  box-sizing: border-box;
+  color: #DAF7A6;
+  position: fixed;
+  bottom: 20px;
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.btn{
+  background-color: #82c8a0; 
+
+  color: #F0EDE5;
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+/* 去除button的边框 */
+.btn::after{
+  border: none;
+}
+
+/* 开始答题按钮 */
+/* .start-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1rpx solid #db20c2; */
+/* }  */
+.start {
+  background-color: #82c8a0;
+  color: #ffffff;
+  font-size: 30rpx;
+  width: 250rpx;
+  height: 80rpx;
+  border-radius: 100rpx;
+  margin: 50rpx auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* border: 1rpx solid #d6fc02; */
+}
+

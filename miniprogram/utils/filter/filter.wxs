@@ -1,0 +1,18 @@
+// 定义一个函数实现数据库中\n返回时被JSON为\\n而不能实现换行问题
+var myFilter = function (text) {
+  if (text) {
+    var res = getRegExp("\\\\n", "g");
+    return text.replace(res, "\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")
+    // 原来的，不能实现换行后缩进
+    // console.log(text);
+    // var pattern = "\\\\n";
+    // var target = "\n";
+    // var reg = getRegExp(pattern, "g");
+    // return text.replace(reg, target);
+
+  }
+}
+// 对外暴露方法名
+module.exports = {
+  filter_N: myFilter,
+}

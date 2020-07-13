@@ -1,0 +1,61 @@
+/* 主样式 */
+page{
+  background-color: #82c79f;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1rpx solid #db20c2; */
+}
+
+/* 开始识别按钮 */
+
+.chooseimage {
+  font-size: 30rpx;
+  width: 250rpx;
+  height: 80rpx;
+  border-radius: 100rpx;
+  margin: 50rpx auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* border: 1rpx solid #d6fc02; */
+}
+
+/* 图片显示区域 */
+
+.idImg {
+  width: 100%;
+  /* height: 1000rpx; */
+  /* border-radius: 15px; */
+  margin-top:30rpx; 
+  display: flex;
+  justify-content: center;
+  /* border: 1rpx solid #ffffff; */
+  /* align-items: center; */
+}
+
+.logo-img {
+  width: 100%;
+  /* border: 1rpx solid #db2c20; */
+  /* margin-bottom: 30rpx; */
+  border-radius: 15rpx;
+  /* height: 330px; */
+  /* display: inline-block;
+  overflow: hidden; */
+}
+
+.result-list-info{
+  width: 100%;
+  /* border: 1rpx solid #3320db; */
+}
+
+.result-list-score{
+  margin-left: 200rpx;
+}
+
+.info-item{
+  border-radius: 10px;
+}

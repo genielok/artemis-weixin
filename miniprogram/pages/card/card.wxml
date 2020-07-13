@@ -1,0 +1,29 @@
+<!--pages/card/card.wxml-->
+<!-- 卡牌 -->
+<scroll-view scroll-y class="scrollPage">
+  <view class='nav-list margin-top-xl'>
+  <!-- 触发弹出层 -->
+    <view wx:for="{{elements}}" wx:key  class="nav-li  shadow "style='background-image:url({{item.imgUrl}});' bindtap="showModal" data-target="Image" data-url="{{item.imgUrl}}" >
+  
+    </view>
+  </view>
+  <view class='cu-tabbar-height'></view>
+</scroll-view>
+
+<!-- 模态框 大图 -->
+<!-- 弹出层内容 -->
+<view class="cu-modal {{modalName=='Image'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url({{bigUrl}});height:200px;" data-url="{{bigUrl}}" bindtap="saveImage">
+      <!-- <view class="cu-bar justify-end text-white">
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close "></text>
+        </view>
+      </view> -->
+    </view>
+    <view class="cu-bar bg-white closeText">
+      <view class="action margin-0 flex-sub solid-left" bindtap="hideModal">关闭</view>
+    </view>
+    
+  </view>
+</view>

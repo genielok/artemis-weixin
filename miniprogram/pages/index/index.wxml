@@ -1,0 +1,51 @@
+<!-- 动物资讯首页 -->
+
+
+<view class=''>
+  <!-- 轮播图start -->
+  <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#82c8a0">
+    <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+      <view class="swiper-item" bindtap='gotoDetail' data-id="{{item.id}}">
+        <image class="shadow-warp" src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+        <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+      </view>
+    </swiper-item>
+  </swiper>
+  <!-- 轮播图end -->
+
+  <!-- 专题分类start -->
+  <view class="class-container justify-center flex">
+  <view class="class-card bg-white padding ">
+    <view class="grid col-4 grid-square">
+
+      <view class="bg-img" bindtap='goToList' data-id="{{item.id}}" wx:for="{{zones}}" wx:key style="background-image:url({{item.url}});">
+      </view>
+    </view>
+  </view>
+</view>
+  <!-- 专题分类end -->
+
+  <!-- 文章start -->
+<view class="margin-bottom">
+    <view wx:for="{{articles}}" wx:key class="cu-card article {{isCard?'no-card':''}}" bindtap="article_Detail" data-id="{{item.art_id}}" data-type="{{item.type}}">
+      <view class="cu-item shadow">
+        <view class="title">
+          <view class="text-cut">{{item.title}}</view>
+        </view>
+        <view class="content">
+          <image src="{{item.img_url}}" mode="aspectFill"></image>
+          <view class="desc">
+            <view class="text-content"> {{item.abstract}}</view>
+            <view>
+              <view class="cu-tag bg-red light sm round">热门</view>
+              <view class="cu-tag bg-green light sm round">{{item.tag}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>
+
+  <!-- 文章end -->
+
+</view>

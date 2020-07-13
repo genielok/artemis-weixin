@@ -1,0 +1,5 @@
+<i-panel title="问题反馈">
+    <!-- <i-input value="{{ value1 }}" title="" autofocus placeholder="名字" />
+    <i-input value="{{ value2 }}" type="number" title="联系电话" placeholder="可不填" /> -->
+    <i-input value="{{ value }}" type="textarea" title="问题描述" placeholder="请输入问题描述(最多200字)" maxlength="200" />
+</i-panel>

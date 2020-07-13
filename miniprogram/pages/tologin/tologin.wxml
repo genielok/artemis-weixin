@@ -1,0 +1,5 @@
+<!-- <view class=""></view> -->
+<view class="contain" style="display:flex;justify-content:center;align-items:center;">
+<!-- <image src="/images/start/logo.png" mode="widthFix" class="logo"/> -->
+<button class="btn" hover-class="btn_hover" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>

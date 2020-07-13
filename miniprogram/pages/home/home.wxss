@@ -1,0 +1,57 @@
+page{
+  width:100%;
+  height:100%;
+  background-image: url(https://s2.ax1x.com/2020/03/01/32wXOP.png);
+}
+.userinfo {
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+  height: 300rpx;
+}
+.userinfo-btn{
+  margin-top: 50rpx;
+
+  font-size:40rpx;
+  }
+
+
+
+.userinfo-avatar {
+ width:130rpx;
+height:130rpx;  
+  border-radius: 50%;
+}
+
+
+.item-image {  
+    width: 80rpx;  
+    height: 80rpx;  
+    margin: 20rpx;
+}
+
+.home-list{
+  border-radius: 20rpx;
+  width: 85%;
+  height: 300rpx;
+}
+
+#btn{
+  margin-left: 0rpx;
+  padding-left: 0rpx;
+  font-weight: 400 !important;
+  width: 240rpx;
+  font-size: 30rpx;
+  /* border: 1rpx solid #fd9104; */
+}
+
+.feedback_text{
+  margin-left: 20rpx;
+}
+
+.feedback_icon{
+  margin-left:0rpx;
+  padding-left:0rpx;  
+}

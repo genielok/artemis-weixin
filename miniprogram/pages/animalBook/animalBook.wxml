@@ -1,0 +1,99 @@
+<view class="book">
+<!-- <view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px;"> -->
+<i-row>
+<!-- 小鹿图标 start -->
+  <view class="icon_image">
+    <image class="icon_image_content" src="../../images/milu.png"/>
+  </view>
+<!-- 小鹿图标 end -->
+</i-row>
+
+<i-row >
+  <i-col span="20" i-class="col-class">
+    <!-- 搜索框 start -->
+    <view>
+      <view class="weui-search-bar">
+        <view class="weui-search-bar_form">
+          <!-- 初始搜索框 start -->
+            <view class="weui-search-bar_box">
+              <icon class="weui-icon-search_in-box" type="search" size="18"></icon>
+              <input type="text" class="weui-search-bar_input" placeholder="搜索" value="{{searchVal}}" bindconfirm="search" bindinput="input"/>
+            </view>
+          <!-- 初始搜索框 end -->
+
+          <!-- 可编辑时搜索框 start -->
+            <label class="weui-search-bar_label" hidden="{{inputShowed}}" bindtap="showInput">
+              <icon class="weui-icon-search" type="search" size="18"></icon>
+              <view class="weui-search-bar_text">搜索</view>
+            </label>
+          <!-- 可编辑时搜索框 end -->
+        </view>
+        <!-- 取消搜索 start -->
+          <view class="weui-search-bar_cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        <!-- 取消搜索 end -->
+      </view>
+</view>
+    <!-- 搜索框 end -->
+  </i-col>
+
+  <i-col span="4" i-class="col-class">
+    <!-- 抽屉式查询按钮 start -->
+    <image class="icon_image_content2" src="../../images/more.png" bindtap="toggleLeft1"/>
+  </i-col>
+</i-row>
+<!-- </view> -->
+
+  <!-- 抽屉 start -->
+  <i-drawer mode="left" visible="{{showLeft1}}" bind:close="toggleLeft1">
+    <view class="book-container">
+      <!-- 保护级别列表 start-->
+      <i-row>
+        <view class="blank"></view>
+        <view class="select_name">
+          <text class="select_name2">保护级别</text>
+        </view>
+         <view class="sign-setting-border {{pidx==item.pid?'selected':''}}" wx:for="{{protectList}}" wx:key="protect" bindtap='proSelectApply' data-id="{{item.pid}}">{{item.p_name}}</view>
+      </i-row>
+      <!-- 保护级别列表 end-->
+    <!-- 类别列表 start-->
+    <i-row>
+      <view class="blank"></view>
+      <view class="select_name">
+        <text class="select_name2">类别</text>
+        </view>
+        <view class="sign-setting-border {{cidx==item.cid?'selected':''}}" wx:for="{{classList}}" wx:key="cate" bindtap='claSelectApply' data-index="{{index}}">{{item.ani_class}}</view>
+    </i-row>
+    <!-- 类别列表 end-->
+    </view>
+  </i-drawer>
+  <!-- 抽屉 end -->
+
+
+  <!-- 查询后动物卡片 start -->
+  <!-- 默认全部显示 -->
+ <view class="picList">
+      <view class="animalList justify-center">
+      <block wx:for="{{animalItems}}" wx:key="item">
+        <view class="animal-list padding-sm">
+        <navigator url="../bookContent/bookContent?id={{item._id}}">
+            <view class="animal-list-info" index="{{index}}">
+              <image class="animal-list-photo" mode='aspectFill' lazy-load='true'  src="{{item.imageUrl}}"/>
+              <view class="animal-list-desc">
+              <text class="animal-list-desc-content">{{item.title}}</text>
+              <!-- 卡片中保护级别的标签 start -->
+              <view class='proLevel {{item.proLevel=="极危"?"bg-red":""||item.proLevel=="濒危"?"bg-orange":""||item.proLevel=="易危"?"bg-yellow":""||item.proLevel=="近危"?"bg-green":""}}'>
+              <text class="proLevel-content">{{item.proLevel}}</text>
+              </view>
+              <!-- 卡片中保护级别的标签 end -->
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </block>
+      </view>
+  </view>
+<view class="loading cu-load bg-white {{!isLoad?'loading':'over'}}"></view>
+  <!-- 查询后动物卡片 end -->
+</view>
+
+  

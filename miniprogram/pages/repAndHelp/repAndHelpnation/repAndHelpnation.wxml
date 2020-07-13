@@ -1,0 +1,47 @@
+<!--pages/repAndHelp/repAndHelpDetail/repAndHelpDetail.wxml-->
+<!-- 求助和举报详情页 -->
+
+<view class='bg-white'>
+  <!-- <block wx:for="{{helpList}}" wx:key="item"> -->
+  <block>
+    <view class='flex  text-xxl padding"'>
+      <text class='text-black'>全国</text>
+    </view>
+    <view class='padding-left text-df flex'>
+      <text>以下信息皆来源于中国野生动物保护协会</text>
+    </view>
+    <view class=' padding-top-lg '>
+      <view class='text-center'>中国野生动物保护协会</view>
+      <view class='ass-form margin-lg'>
+        <view class="table">
+          <view class="table-tr">
+            <view class="table-th">地址</view>
+            <view class="table-td">北京和平里东街18号</view>
+          </view>
+          <view class="table-tr">
+            <view class="table-th">联系电话</view>
+            <view class="table-td">010-84238801</view>
+          </view>
+          <view class="table-tr">
+            <view class="table-th">传真</view>
+            <view class="table-td">010-64238030</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='text-center padding-top-lg '>
+      <view class='padding-sm'>森林公安报警电话</view>
+      <view class='padding-xs'>12119</view>
+    </view>
+    <view class='text-center padding-top-lg '>
+      <view class='padding-sm'>热线电话</view>
+      <view class='padding-xs'>12345</view>
+    </view>
+    <view class='text-center padding-top-lg '>
+      <view class='padding-sm'>查询当地林业电话</view>
+      <view class='padding-xs'>114</view>
+    </view>
+
+  </block>
+</view>

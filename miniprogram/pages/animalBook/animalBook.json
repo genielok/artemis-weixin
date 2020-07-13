@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-row": "../dist/row/index",
+    "i-col": "../dist/col/index",
+    "i-drawer":"../dist/drawer/index",
+    "i-button":"../dist/button/index"
+  },
+  "navigationBarTitleText": "动物图鉴"
+}

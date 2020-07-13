@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/Identification/Identification",
+    "pages/animalBook/animalBook",
+    "pages/bookContent/bookContent",
+    "pages/home/home",
+    "pages/card/card",
+    "pages/favorite/favorite",
+    "pages/repAndHelp/repAndHelp",
+    "pages/repAndHelp/repAndHelpDetail/repAndHelpDetail",
+    "pages/answerQuestion/answerQuestion",
+    "pages/answerQuestion/answerQuestionDetail/answerQuestionDetail",
+    "pages/answerQuestion/answerQuestionSuccess/answerQuestionSuccess",
+    "pages/feedback/feedback",
+    "pages/tologin/tologin"
+  ],
+  "window": {
+    "backgroundColor": "#82c8a0",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#82c8a0",
+    "navigationBarTitleText": "森灵图鉴",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+    
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+
+  "tabBar": {
+    "color": "#666666",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homefill.png",
+        "auth": 0
+      },
+      {
+        "pagePath": "pages/animalBook/animalBook",
+        "text": "图鉴",
+        "iconPath": "images/moment.png",
+        "selectedIconPath": "images/momentfill.png",
+        "auth": 0
+      },
+      {
+        "pagePath": "pages/Identification/Identification",
+        "text": "识别",
+        "iconPath": "images/camera.png",
+        "selectedIconPath": "images/camerafill.png",
+        "auth": 0
+      },
+      {
+        "pagePath": "pages/answerQuestion/answerQuestion",
+        "text": "竞答",
+        "iconPath": "images/QA.png",
+        "selectedIconPath": "images/QAfill.png",
+        "auth": 0
+      },
+
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/myfill.png",
+        "auth": 0
+      }
+    ]
+  }
+}

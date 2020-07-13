@@ -1,0 +1,107 @@
+/* pages/animalMoments/animalMomentsDetail/animalMomentsDetail.wxss */
+page{
+  background-color: #fff;
+  background-repeat: no-repeat;
+}
+.xiangqing-container{
+	width:50vw;
+	height: 100vh;
+	background:#fff;
+}
+
+.main{
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap; 
+}
+/* 收藏图标 */
+.favorite{
+  padding: 0 !important;
+  font-size: 26rpx;
+  background-color: #82c8a0;
+  width:160rpx !important;
+  height: 60rpx;
+  border-radius: 60rpx;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  /* border: 1rpx solid #21fd04; */
+  display: flex;
+  align-items: center;
+}
+
+/* 已收藏图标 */
+.isFavorite{
+  padding: 0 !important;
+  font-size: 26rpx;
+  background-color: #e54d42;
+  width:160rpx !important;
+  height: 60rpx;
+  border-radius: 60rpx;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  /* border: 1rpx solid #fd9104; */
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* 动物名称（标题）+收藏一行 */
+.name{
+  width: 100%;
+  margin: 20rpx 40rpx 10rpx;
+  vertical-align:middle;
+  /* border: 1rpx solid #04fd42; */
+}
+/* 标题 */
+.animal_title{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+
+/* 动物图片 */
+.animal_pic{
+  width: 100%;
+  border-radius: 10rpx;
+  /* border: 1rpx solid #04fd42; */
+
+}
+.animal_pic_bg{
+  width: 100%;
+  margin: 30rpx 50rpx;
+  /* border: 1rpx solid #4604fd; */
+}
+/* 动物简介标题（icon+标题） */
+.animal_intro_title{
+  margin-top: 15rpx;
+  margin-left:50rpx;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 35rpx;
+  font-weight: bold;
+  letter-spacing: 2rpx;
+  /* border: 1rpx solid #fd04aa; */
+}
+/* 动物小图标 */
+.icon{
+  width: 8%; 
+  margin-right: 10rpx;
+  /* border: 1rpx solid #4604fd; */
+}
+/* 正文 */
+.animal_intro_content{
+  margin: 15rpx 50rpx 50rpx;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  line-height: 50rpx;
+  text-indent: 2em;
+  /* text-indent: 60rpx; */
+  /* border: 1rpx solid #04fd6c; */
+}

@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class='flex justify-center margin-top-xl'>
+  <view class='userinfo padding bg-white radius shadow-warp'>
+    <view class='text-bold text-xl text-center text-black'>知识竞答</view>
+    <view class='text-center padding-sm'>答题成功可获得卡牌一张！快来收集吧！</view>
+    <view class='text-center'>一共有五道题噢！发挥你的聪明才智吧~</view>
+  </view>
+</view>
+
+<view class="container">
+  <view class="card margin bg-white radius">
+  <!-- <button bindtap="bindSequence" class='type-btn'> 顺序学习 </button> -->
+   <view>
+    <!-- <view class='grid col-2 '> -->
+    <button open-type="getUserInfo" class="start shadow-wrap bg-white " bindgetuserinfo="bindSequence">
+    开始答题
+    </button>
+      <!-- <view class='padding-lg' wx:for="{{cardList}}" wx:key bindtap="bindSequence">
+        <image class='cardImg' src='{{item.card_url}}'></image>
+      </view> -->
+    </view>
+    <!-- <button bindtap="bindSequence" class='type-btn'> 顺序学习 </button> -->
+    <!-- <button bindtap="bindRandom" class='type-btn'> 乱序学习 </button> -->
+  </view>
+
+</view>

@@ -1,0 +1,28 @@
+<view class=' flex justify-center margin-top-xl'>
+  <view class='userinfo card margin bg-white radius'>
+    <view class="text-bold text-center text-black text-xl padding">第{{num}}题</view>
+    <view class="padding-sm ">{{question.stem}}</view>
+  </view>
+</view>
+
+<view class=' flex justify-center ' >
+  <view class='option card margin bg-white radius'>
+    <view class="options ">
+      <view wx:key="option" wx:for="{{question.options}}" class="flex justify-start" hover-class="none">
+        <button animation="{{wrongid==item.option? animationData:''}}" type="{{correctid==item.option?'primary':''}}" class="option_button flex text-df text-black margin-sm padding-xs align-center" bindtap='selectAnswer' data-id="{{item.option}}" disabled='{{disable}}' hover-class="none">
+          <view class="content_options cu-avatar sm round margin-xs bg-green2">{{item.option}}</view>
+           <view class="content">
+           {{item.content}}
+           </view>
+           </button>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<view class="footer margin-bottom">
+  <button id="btnPrevious" class="btn" bindtap='previousQuestion'>上一题</button>
+  <!-- 感觉不用下一题 -->
+  <!-- <button id="btnNext" class="btn" bindtap='nextQuestion' loading="{{pending}}">下一题</button> -->
+</view>
