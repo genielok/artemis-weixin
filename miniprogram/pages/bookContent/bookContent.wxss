@@ -1,0 +1,118 @@
+page{
+  background:#fff;
+}
+.xiangqing-container{
+	width:50vw;
+	height: 100vh;
+	background:#fff;
+}
+
+.main{
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+/* 收藏图标 */
+.favorite{
+  font-size: 26rpx;
+  background-color: #82c8a0;
+  padding: 0 !important;
+  width:160rpx !important;
+  height: 60rpx;
+  border-radius: 60rpx;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  /* border: 1rpx solid #fd9104; */
+  display: flex;
+  align-items: center;
+}
+
+/* 已收藏图标 */
+.isFavorite{
+  padding: 0 !important;
+  font-size: 26rpx;
+  background-color: #e54d42;
+  width:160rpx  !important;
+  height: 60rpx;
+  border-radius: 60rpx;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  /* border: 1rpx solid #fd9104; */
+  display: flex;
+  align-items: center;
+}
+
+/* 动物名称（标题）+收藏一行 */
+.name{
+  width: 100%;
+  margin: 50rpx 50rpx 10rpx;
+  vertical-align:middle;
+  /* border: 1rpx solid #04fd42; */
+}
+/* 标题 */
+.animal_title{
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #3e3e3e;
+}
+/* 英文名 */
+.EnName{
+  width: 100%;
+  margin: 0rpx 50rpx;
+  font-size: 35rpx;
+  color: #919191;
+  letter-spacing: 1rpx;
+}
+/* 动物标签 */
+.animal_label{
+  width: 100%;
+  margin: 10rpx 50rpx;
+}
+.tag{display:inline-block;height:23px;line-height:23px;padding:5rpx 10rpx;background:#524f75;color: #ffffff;margin-right:10rpx ;font-size:25rpx;vertical-align:middle;}
+.proLevel{display:inline-block;height:23px;line-height:23px;padding:5rpx 10rpx;background:#f88669;color: #ffffff;margin-right:10rpx ;font-size:25rpx;vertical-align:middle;}
+
+/* 动物图片 */
+.animal_pic{
+  width: 100%;
+  border-radius: 10rpx;
+  /* border: 1rpx solid #04fd42; */
+
+}
+.animal_pic_bg{
+  width: 100%;
+  margin: 50rpx 50rpx;
+  /* border: 1rpx solid #4604fd; */
+}
+/* 动物简介标题（icon+标题） */
+.animal_intro_title{
+  margin-top: 15rpx;
+  margin-left:50rpx;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 35rpx;
+  font-weight: bold;
+  letter-spacing: 2rpx;
+  /* border: 1rpx solid #fd04aa; */
+}
+/* 动物小图标 */
+.icon{
+  width: 8%; 
+  margin-right: 10rpx;
+  /* border: 1rpx solid #4604fd; */
+}
+/* 正文 */
+.animal_intro_content{
+  margin: 15rpx 50rpx 50rpx;
+  width: 100%;
+  color: #3e3e3e;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  line-height: 50rpx;
+  text-indent: 60rpx;
+  /* border: 1rpx solid #04fd6c; */
+}

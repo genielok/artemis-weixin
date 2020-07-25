@@ -1,0 +1,244 @@
+/* 窗口容器 */
+.book{
+background:#82c8a0;
+}
+.book-container{
+	width:50vw;
+	height: 100vh;
+	background-color: white
+}
+/* 头部图标麋鹿 */
+.icon_image{
+  display: flex;
+  justify-content: center;
+  /* border: 1rpx solid #20db6e; */
+}
+.icon_image_content{
+  width: 120rpx;
+  height: 98rpx;
+  margin-top: 25rpx;
+  /* border: 1rpx solid #4220db; */
+}
+
+.search{
+  border: 1rpx solid #db2020;
+  height: 300rpx;
+}
+
+
+
+/* 搜索框 */
+.weui-search-bar {
+  position: relative;
+  padding: 0px 12px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #82c8a0;
+  /* border: 1rpx solid #db2020; */
+  /* border-top: 1rpx solid #D7D6DC;
+  border-bottom: 1rpx solid #D7D6DC; */
+}
+.weui-icon-search {
+  margin-right: 4px;
+  font-size: inherit;
+  margin-top: 5px;
+  /* border: 1rpx solid #db2020; */
+}
+/* 搜索第二层样式 */
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 7px;
+  top: 6px;
+}
+.weui-search-bar_text {
+  display: inline-block;
+  position: absolute;
+  font-size: 12px;
+  top: 5rpx;
+  /* border: 1rpx solid #000000; */
+}
+.weui-search-bar_form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 8px;
+  background: #FFFFFF;
+  margin-bottom: 5px;
+  /* border: 1rpx solid #E6E6EA; */
+}
+.weui-search-bar_box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+/* 第二层搜索 */
+.weui-search-bar_input {
+  height: 32px;
+  line-height: 28px;
+  font-size: 12px;
+}
+.weui-search-bar_label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 10px;
+  text-align: center;
+  color: #c0c0c0;
+  background: #FFFFFF;
+  line-height: 28px;
+}
+.weui-search-bar_cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* 抽屉弹出按钮 */
+.icon_image_content2{
+  width: 70rpx;
+  height: 70rpx;
+  /* border:1px solid rgb(233, 24, 24); */
+}
+
+/* 筛选的多选 */
+.sign-setting-border{
+margin-left: 8%;
+width:32%;
+float: left;
+height: 30px;
+line-height: 30px;
+border-radius: 15px;
+background-color: #ffffff;
+color: #999999;
+font-size: 12px;
+text-align: center;
+font-family: -apple-system;
+margin-bottom:10px;
+border:1px solid #DBDBDB;
+}
+.selected{
+  background-color: #82c8a0;
+  color: rgba(255, 255, 255, 1);
+  border:1px solid #82c8a0;
+}
+.select_name{
+  margin-left:8%;
+  font-size: 12px; 
+  margin-bottom: 2%;
+  /* border: 1rpx solid #04fd42; */
+}
+.blank{
+  margin-bottom: 15%;
+  background-color: #ffffff;
+  border: 1rpx solid #ffffff;
+}
+
+/* 动物图片 */
+.aniImg{
+  width: 350rpx;
+}
+
+/* 图片列表 */
+.animalList{
+  margin-top: 20rpx;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap; 
+  /* border: 1rpx solid #04fd42; */
+}
+.animal-list-info{
+
+  position: relative;
+  background-color: #ffffff;
+  margin-bottom: 10rpx; 
+  border-radius: 10rpx;
+  padding-bottom: 10rpx;
+
+  /* border: 1rpx solid #fd0404; */
+}
+
+.animal-list-photo{
+  width: 310rpx;
+  height: 220rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  /* border: 1rpx solid #04fd3a; */
+}
+.animal-list-desc{
+  /* display: block;
+  left: 0;
+  width: 100%; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  /* left: 0; */
+  width: 100%;
+   /* text-align: center;  */
+
+  padding-top: 10rpx;
+  /* border: 1rpx solid #3204fd; */
+}
+.animal-list-desc-content{
+  /* padding-left: 15rpx; */
+  padding-left: 15rpx;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.animal-list-desc-img{
+  width: 40rpx;
+  position: absolute;
+  right: 0;
+  padding-right:15rpx; 
+}
+
+.picList{
+  position: relative;
+  padding: 20rpx 0rpx;
+  /* display: -webkit-box;
+  display: -webkit-flex; */
+  /* display: flex; */
+  box-sizing: border-box;
+  background-color: #f3f3f3;
+}
+
+.loading{
+  bottom: 0
+}
+
+/* 保护级别标签 */
+.proLevel{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  font-size:24rpx;
+  line-height:32rpx;
+  margin-right:15rpx;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rpx;
+  /* border: 1rpx solid #3204fd; */
+  }
+  /* 保护级别标签中的文字 */
+  .proLevel-content{
+    color: #ffffff;
+    font-size:24rpx;
+    padding-top:3rpx; 
+    align-items: center;
+    justify-content: center;
+    /* border: 1rpx solid #04fd42; */
+  }

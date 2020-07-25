@@ -1,0 +1,13 @@
+<!--pages/answerQuestion/answerQuestionSuccess/answerQuestionSuccess.wxml-->
+<view class='padding-xl margin-top-xl'>
+  <view class="card padding-xl  shadow-blur bg-white margin-top bg-img" style="background-image:url({{randomCard}});" bindtap="saveImage">
+  </view>
+
+  <view class='padding-xl margin-lg'>
+  <image class='success-img' src='../../../images/answerQ/success.png'></image>
+  </view>
+
+  <view class='justify-center flex '>
+  <botton  class='cu-btn bg-green2 radius lg shadow' bindtap="goToCard">立即查看</botton>
+  </view>
+</view>

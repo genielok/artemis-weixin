@@ -1,0 +1,59 @@
+
+<!-- 导航条 -->
+<view class="nav">
+  <view bindtap="navSwitch" data-index="0" class="{{navState==0 ? 'nav-switch-style':''}} {{navState==0 ? 'solid-bottom':''}} padding-xs">动物</view>
+  <view bindtap="navSwitch" data-index="1" class="{{navState==1 ? 'nav-switch-style':''}} padding-xs">文章</view>
+</view>
+<!-- 不可滑动页 -->
+<view>
+
+  <!-- 动物收藏 -->
+  <view wx:if="{{navState==0}}" class="style-default bg-white">
+    <scroll-view scroll-y class="scrollPage margin-top">
+      <view class='nav-list '>
+        <block wx:for="{{favorAnimalItems}}" wx:key="item">
+          <view class="nav-li  shadow " style='background-image:url({{item.imageUrl}});' bindtap="gotoBookContent" data-id="{{item.book_id}}">
+            <!-- 修改为访问请求页面用下面的语句 -->
+            <!-- <navigator url="/pages/photo/photo?id={{item.book_id}}"> -->
+            <view class="favor-animal-text">
+              <text class="animal-list-desc-content">{{item.title}}</text>
+            </view>
+            <!-- <text class="animal-list-desc">{{item.content}}</text> -->
+          </view>
+        </block>
+      </view>
+      <view class='cu-tabbar-height'></view>
+    </scroll-view>
+  </view>
+  <!-- 动物收藏end -->
+
+
+  <!-- 文章收藏 -->
+  <view wx:else="{{navState==1}}" class=" bg-white">
+    <scroll-view scroll-y class="scrollPage margin-top">
+<!-- 文章start -->
+
+    <view wx:for="{{articles}}" wx:key class="cu-card article no-card" bindtap="article_Detail" data-id="{{item.article_id}}" data-type="{{item.type}}">
+      <view class="cu-item shadow">
+        <view class="title">
+          <view class="text-cut">{{item.title}}</view>
+        </view>
+        <view class="content">
+          <image src="{{item.img_url}}" mode="aspectFill"></image>
+          <view class="desc">
+            <view class="text-content"> {{item.abstract}}</view>
+            <view>
+              <view class="cu-tag bg-red light sm round">热门</view>
+              <view class="cu-tag bg-green light sm round"> {{item.tag}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  <!-- 文章end -->
+    </scroll-view>
+  </view>
+  <!-- 文章收藏end -->
+</view>

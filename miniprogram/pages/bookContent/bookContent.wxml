@@ -1,0 +1,69 @@
+<view class="xiangqing">
+  <view class="main">
+    <i-row class="name">
+    <i-col span="18" i-class="col-class">
+      <!-- 标题 start -->
+      <text class="animal_title">{{contentlist.title}}</text>
+      <!-- 标题 end -->
+    </i-col>
+    <i-col span="6" i-class="col-class">
+      <!-- 收藏图标 start -->
+      <!-- <view class="favorite" bindtap="favorite" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" data-title="{{contentlist.title}}" data-imgUrl="{{contentlist.imageUrl}}">
+      收藏
+    </view> -->
+
+      <view class="flex bg-white padding-sm justify-end">
+          <button class="favorite" bindgetuserinfo="favorite" open-type="getUserInfo" wx:if="{{!isCollected}}">
+            收藏
+          </button>
+          <button class="isFavorite" bindgetuserinfo="favorite" open-type="getUserInfo" wx:if="{{isCollected}}">
+            已收藏
+          </button>
+        </view>
+      <!-- 收藏图标 end -->
+    </i-col>
+    </i-row>
+    <i-row class="EnName">
+      <!-- 英文名 start-->
+      <text>{{contentlist.enName}}</text>
+      <!-- 英文名 end -->
+    </i-row>
+    <!-- 动物标签 start -->
+    <i-row class="animal_label text-sm">
+      <view class="tag">{{contentlist.catalogue}}</view>
+      <view class="tag">{{contentlist.class}}</view>
+      <view class="proLevel">{{contentlist.proLevel}}</view>
+    </i-row>
+    <!-- 动物标签 end -->
+    <!-- 动物图片 start -->
+    <i-row class="animal_pic_bg">
+      <image src="{{contentlist.imageUrl}}" mode="widthFix" class="animal_pic"/>
+    </i-row>
+    <!-- 动物图片 end -->
+    <!-- 动物简介标题 start -->
+    <i-row class="animal_intro_title">
+      <image src="../../images/daxiang.png" mode="widthFix" class="icon"/>
+      <text>动物简介</text>
+    </i-row>
+    <!-- 动物简介标题 end -->
+    <!-- 动物简介内容 start -->
+    <i-row class="animal_intro_content">
+      <text>{{contentlist.content}}</text>
+    </i-row>
+    <!-- 动物简介内容 end -->
+    <!-- 分布情况标题 start -->
+    <i-row class="animal_intro_title">
+      <image src="../../images/shiyishou.png" mode="widthFix" class="icon"/>
+      <text>分布情况</text>
+    </i-row>
+    <!-- 分布情况标题 end -->
+
+    <!-- 分布情况内容 start -->
+    <i-row class="animal_intro_content">
+      <text>{{contentlist.distribution}}</text>
+    </i-row>
+    <!-- 分布情况内容 end -->
+
+</view>
+<!-- <image src="../../images/more.png"/> -->
+</view>

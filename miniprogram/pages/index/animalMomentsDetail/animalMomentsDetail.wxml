@@ -1,0 +1,52 @@
+<!--pages/animalMoments/animalMomentsDetail/animalMomentsDetail.wxml-->
+<!-- 解决换行问题 -->
+<wxs src="../../../utils/filter/filter.wxs" module="tools" />
+
+<!-- 资讯详情 -->
+<view class="xiangqing">
+  <view class="main">
+    <i-row class="name">
+      <i-col span="18" i-class="col-class">
+        <!-- 标题 start -->
+        <text class="animal_title">{{articles.title}}</text>
+        <!-- 标题 end -->
+      </i-col>
+
+    </i-row>
+
+        <!-- 来源 start-->
+        <view class="flex-sub bg-white padding-left-lg padding-top ">来源:{{articles.source}}</view>
+
+      
+
+        <!-- 收藏 -->
+        <view class="flex bg-white padding-sm justify-end margin-right-sm">
+          <button class="favorite" bindgetuserinfo="favorite" open-type="getUserInfo" wx:if="{{!isCollected}}">
+            收藏
+          </button>
+          <button class="isFavorite" bindgetuserinfo="favorite" open-type="getUserInfo" wx:if="{{isCollected}}">
+            已收藏
+          </button>
+        </view>
+
+
+
+
+    <!-- 动物图片 start -->
+    <i-row class="animal_pic_bg">
+      <image src="{{articles.img_url}}" mode="widthFix" class="animal_pic" />
+    </i-row>
+    <!-- 动物图片 end -->
+
+
+    <!-- 资讯内容 start -->
+    <!-- <text class="animal_intro_content">
+      {{articles.content}}
+    </text> -->
+     <text class='animal_intro_content' decode='true'>{{tools.filter_N(articles.content)}}</text>
+    <!-- 资讯内容 end -->
+
+
+  </view>
+  <!-- <image src="../../images/more.png"/> -->
+</view>

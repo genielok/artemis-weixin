@@ -1,0 +1,48 @@
+<wxs module="filters" src="wxs/filter.wxs"></wxs>
+
+<!-- 动物识别 -->
+<view class="main">
+  <!-- 图片 start -->
+  <view class="idImg padding justify-center">
+    <image class="logo-img" src="{{tempFilePaths}}" mode="widthFix"></image>
+  </view>
+  <!-- 图片 end -->
+  <view>
+    <view class="chooseimage shadow-wrap bg-white " bindtap="xiangce">
+      开始识别
+    </view>
+  </view>
+
+  <view class='cu-list menu sm-border card-menu margin-bottom'>
+    <block wx:for="{{resultList}}" wx:key="item">
+
+      <view class="result-list cu-item margin-bottom info-item"  bindtap="showModal" data-item='{{item}}'data-target="Image">
+        <view class="result-list-info justify-between  flex" index="{{index}}">
+          <view class="margin-left">{{item.name}}</view>
+          <view class="margin-right">相似程度：{{item.score}}</view>
+          <!-- 百科：{{item.baike_info.description}} -->
+          <!-- 百科图片：{{item.baike_info.image_url}} -->
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="cu-modal {{modalName=='Image'?'show':''}}">
+    <view class="cu-dialog">
+      <view class="bg-img" style="background-image: url({{modalInfoUrl}});height:250px;">
+        <view class="cu-bar justify-end text-white">
+          <view class="action" bindtap="hideModal">
+            <text class="cuIcon-close "></text>
+          </view>
+        </view>
+      </view>
+      <view class="padding-xl">
+        {{modalInfo}}
+      </view>
+      <view class="cu-bar bg-white">
+        <view class="action margin-0 flex-sub  solid-left" bindtap="hideModal">我知道了</view>
+      </view>
+    </view>
+  </view>
+
+</view>

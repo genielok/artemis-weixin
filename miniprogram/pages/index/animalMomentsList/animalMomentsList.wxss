@@ -1,0 +1,11 @@
+/* pages/animalMoments/animalMomentsList/animalMomentsList.wxss */
+
+page{
+  background-color: #f0f0f0;
+}
+.listHeadImg {
+  width: 100%;
+  height: 350rpx;
+}
+
+

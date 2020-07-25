@@ -1,0 +1,52 @@
+<!--pages/repAndHelp/repAndHelpDetail/repAndHelpDetail.wxml-->
+<!-- 求助和举报详情页 -->
+
+<view class='bg-white'>
+  <!-- <block wx:for="{{helpList}}" wx:key="item"> -->
+  <block>
+    <view class='flex  text-xxl padding"'>
+      <text class='text-black'>{{helpList[0].province}}</text>
+    </view>
+    <view class='padding-left text-df flex'>
+      <text>以下信息皆来源于中国野生动物保护协会</text>
+    </view>
+    <view class=' padding-top-lg '>
+      <view class='text-center'>{{helpList[0].name}}</view>
+      <view class='ass-form margin-lg'>
+        <view class="table">
+          <view class="table-tr">
+            <view class="table-th">地址</view>
+            <view class="table-td">{{helpList[0].address}}</view>
+          </view>
+          <view class="table-tr">
+            <view class="table-th">邮编</view>
+            <view class="table-td">{{helpList[0].postcode}}</view>
+          </view>
+          <view class="table-tr">
+            <view class="table-th">联系电话</view>
+            <view class="table-td">{{helpList[0].tel}}</view>
+          </view>
+          <view class="table-tr">
+            <view class="table-th">传真</view>
+            <view class="table-td">{{helpList[0].fax}}</view>
+          </view>
+          <view class="table-tr">
+            <view class="table-th">联系邮箱</view>
+            <view class="table-td">{{helpList[0].email}}</view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='text-center padding-top-lg '>
+      <view class='padding-sm'>{{helpList[0].province}}森林公安电话</view>
+      <view class='padding-xs'>{{helpList[0].forest_tel}}</view>
+    </view>
+    <view class='text-center padding-top-lg '>
+      <view class='padding-sm'>{{helpList[0].wild_name}}</view>
+      <view class='padding-xs'>{{helpList[0].wild_tel}}</view>
+    </view>
+
+  </block>
+</view>

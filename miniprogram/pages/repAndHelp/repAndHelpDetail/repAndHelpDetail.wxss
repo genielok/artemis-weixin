@@ -1,0 +1,39 @@
+/* pages/repAndHelp/repAndHelpDetail/repAndHelpDetail.wxss */
+page{
+  background-color: #ffffff;
+}
+.ass-form{
+  width: 90%;
+}
+
+.table, .table div {
+margin: 0 auto;
+}
+
+.table {
+display: table;
+width: 100%;
+border-collapse: collapse; 
+box-sizing: border-box;
+}
+
+.table-tr {
+display: table-row; 
+height: 92rpx;
+}
+
+.table-th {
+background-color: #f1f1f1;
+display: table-cell;
+border: 1rpx solid gray;
+text-align: center;
+vertical-align: middle;
+}
+
+.table-td {
+  background-color: #fbfbfb;
+display: table-cell;
+border: 1rpx solid gray;
+text-align: center;
+vertical-align: middle;
+}
